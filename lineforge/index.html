@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Support for Lineforge by Kitib Studio.">
+    <title>Lineforge — Support</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f5f2eb;
+        --ink: #1d2424;
+        --slate: #546162;
+        --copper: #a4512b;
+        --line: #cad0cb;
+        --panel: #fffdf8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif;
+        line-height: 1.55;
+      }
+      main { width: min(100% - 2.5rem, 48rem); margin: 0 auto; padding: 3rem 0 4rem; }
+      .mark {
+        width: 3rem;
+        height: 2rem;
+        border: 2px solid var(--ink);
+        border-bottom: 0;
+        position: relative;
+        margin-bottom: 2.75rem;
+      }
+      .mark::after {
+        content: "";
+        position: absolute;
+        left: .42rem;
+        right: -.55rem;
+        bottom: -.55rem;
+        border-top: 4px solid var(--copper);
+      }
+      h1 { font-size: clamp(2.2rem, 7vw, 4.4rem); line-height: .98; letter-spacing: -.055em; margin: 0; }
+      h2 { font-size: 1.35rem; margin: 0 0 .4rem; }
+      .intro { color: var(--slate); font-size: 1.15rem; max-width: 37rem; margin: 1.25rem 0 2.5rem; }
+      .support {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-left: 5px solid var(--copper);
+        padding: 1.5rem;
+        margin: 0 0 1rem;
+      }
+      a { color: var(--copper); font-weight: 650; text-underline-offset: .16em; }
+      a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+      nav { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 2.25rem; }
+      footer { color: var(--slate); font-size: .9rem; margin-top: 4rem; }
+      @media (prefers-color-scheme: dark) {
+        :root { --paper: #182021; --ink: #f2eee5; --slate: #bdc4bd; --line: #455052; --panel: #20292a; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark" aria-hidden="true"></div>
+      <h1>Lineforge</h1>
+      <p class="intro">Support for the single line diagram app for Mac and iPad by Kitib Studio.</p>
+
+      <section class="support" aria-labelledby="support-heading">
+        <h2 id="support-heading">Get support</h2>
+        <p>If you need help with Lineforge, email <a href="mailto:kitib.studio@icloud.com">kitib.studio@icloud.com</a>. Include the app version (from About Lineforge), your device and a short description of the issue.</p>
+        <p>Lineforge works with electrical design files. Please remove confidential project information, client names and site details from screenshots and attachments before you send them.</p>
+      </section>
+
+      <section class="support" aria-labelledby="beta-heading">
+        <h2 id="beta-heading">TestFlight and pre-release builds</h2>
+        <p>TestFlight builds are pre-release software. Features and results may change. Do not rely on a beta build as the sole basis for construction, procurement, operation or submittal work. Engineering outputs must be verified by a competent person before use.</p>
+        <p>Copyright, trademark attributions and engineering disclaimers are also available in the app under <strong>About Lineforge → Legal Notices</strong>.</p>
+      </section>
+
+      <nav aria-label="Support information">
+        <a href="privacy/">Privacy policy</a>
+        <a href="mailto:kitib.studio@icloud.com">Contact Kitib Studio</a>
+      </nav>
+
+      <footer>© 2025–2026 Kitib Studio. All rights reserved.</footer>
+    </main>
+  </body>
+</html>
