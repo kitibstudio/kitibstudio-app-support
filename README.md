@@ -17,5 +17,3 @@ Public support and privacy-policy pages, published from the repository root on t
 
 - `https://kitibstudio.github.io/kitibstudio-app-support/lineforgeSLD/`
 - `https://kitibstudio.github.io/kitibstudio-app-support/lineforgeSLD/privacy/`
-
-Legacy `/lineforge/` URLs redirect to `/lineforgeSLD/`.
